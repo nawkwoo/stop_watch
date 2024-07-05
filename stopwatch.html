@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stopwatch</title>
+    <link rel="stylesheet" href="stopwatch.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1> 🍀PanWoo's 스톱워치🍀</h1>
+    <div class="container">
+        <div class="stopwatch">
+            <div class="time" id="display">00:00:00</div>
+        </div>
+
+        <div class="buttons">
+            <button id="startBtn"><i class="ri-play-line"></i></button>
+            <button id="stopBtn"><i class="ri-stop-line"></i></button>
+            <button id="resetBtn"><i class="ri-pause-fill"></i></button>
+        </div>
+    </div>
+    
+    <div class="records">
+        <div class="records_top">
+            <button id="selectAllBtn" class="inactive">🙉</button>
+            <h2>구간 기록</h2>
+            <button id="deleteBtn">🗑️</button>
+        </div>
+
+        <ul id="recordsList"></ul>
+    </div>
+
+    <script src="stopwatch.js"></script>
+</body>
+</html>
+
+<!--
+🤨 start 🤨
+🤣 stop 🤣
+😱 reset 😱
+✅ ☑️ 🗑️ 🙈 🙉
+<i class="ri-delete-bin-line"></i>
+-->
